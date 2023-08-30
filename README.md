@@ -2,7 +2,15 @@
  
 Authored by Rachel Woodill
 
-
+#----------------------------------
+References:
+	python-challenge > PyBank > Resources 
+		CSV file used for PyBank
+		
+	python-challenge > PyPoll > Resources
+		CSV file used for PyPoll
+	
+#----------------------------------
 Instructions: 
 
 Background
