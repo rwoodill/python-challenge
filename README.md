@@ -16,7 +16,8 @@ References:
 #----------------------------------
 Analysis:
 	PyBank
-		-
+		-The total months analyzed were 86
+		-The grand total over those 86 months was $22,564,198
 	PyPoll
 		-The winner is Diana DeGette
 		-She recieved 73.812% of the votes
