@@ -10,6 +10,17 @@ References:
 	python-challenge > PyPoll > Resources
 		CSV file used for PyPoll
 	
+	how to print results to a text file:
+	https://stackoverflow.com/questions/23364096/how-to-write-output-of-terminal-to-file
+	
+#----------------------------------
+Analysis:
+	PyBank
+		-
+	PyPoll
+		-The winner is Diana DeGette
+		-She recieved 73.812% of the votes
+
 #----------------------------------
 Instructions: 
 

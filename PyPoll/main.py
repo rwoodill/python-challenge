@@ -1,23 +1,21 @@
 import os
 import csv
+import sys
 
 # ----------------------------------------------------------
 #  PyPoll Analysis
 # ----------------------------------------------------------
-
 #file extension
 pypoll_csv = "PyPoll\\Resources\\election_data.csv"
 #variable to hold total votes
 total_votes = 0
-#list to hold candidate names
-# candidate_list = []
-#list to hold number of votes per candidate
-# num_votes = []
 #dictionary to hold name : number of votes
 candidate_votes = {}
 #dictionary used to calculate percentage votes per candidate
 percentage_votes = {}
+#variable to hold winner vote count
 winner = 0
+#variable to hold winner name
 winner_name = ""
 # ----------------------------------------------------------
 #  open the csv and read it, then store information about
@@ -50,7 +48,7 @@ with open(pypoll_csv, 'r') as csvfile:
             winner_name = k
 
 #----------------------------------------------------------
-#  Function to print the results
+#  Function to print the results to terminal
 #----------------------------------------------------------
 def print_results():
     print("Election Results")
@@ -62,6 +60,14 @@ def print_results():
     print("-------------------------")
     print(f"Winner: {winner_name}")
     print("-------------------------")
-
 # call print_results
 print_results()
+
+#----------------------------------------------------------
+#  Print the results to txt file  
+#  simplified version ref:
+#  https://stackoverflow.com/questions/23364096/how-to-write-output-of-terminal-to-file
+#----------------------------------------------------------
+with open("PyPoll\\Analysis\\ElectionResults.txt", "w") as text:
+    sys.stdout = text
+    print_results()
