@@ -5,8 +5,9 @@ import sys
 # ----------------------------------------------------------
 #  PyPoll Analysis
 # ----------------------------------------------------------
-#file extension
+#file extensions
 pypoll_csv = "PyPoll\\Resources\\election_data.csv"
+results_txt= "PyPoll\\Analysis\\ElectionResults.txt"
 #variable to hold total votes
 total_votes = 0
 #dictionary to hold name : number of votes
@@ -68,6 +69,6 @@ print_results()
 #  simplified version ref:
 #  https://stackoverflow.com/questions/23364096/how-to-write-output-of-terminal-to-file
 #----------------------------------------------------------
-with open("PyPoll\\Analysis\\ElectionResults.txt", "w") as text:
+with open(results_txt, "w") as text:
     sys.stdout = text
     print_results()
